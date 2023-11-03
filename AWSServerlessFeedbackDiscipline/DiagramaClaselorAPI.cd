@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AWSServerlessFeedbackDiscipline.Controllere.AniDeStudiuController">
+    <Position X="7.5" Y="0.5" Width="2.25" />
+    <AssociationLine Name="_context" Type="AWSServerlessFeedbackDiscipline.ContextBazaDeDate.FeedbackDisciplineContext">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.068" Y="0.552" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Controllere\AniDeStudiuController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.ContextBazaDeDate.FeedbackDisciplineContext">
+    <Position X="6.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAIAAAgAAAAAAAQgECAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Context\FeedbackDisciplineContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Controllere.ChestionareController">
+    <Position X="3" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAABAAAAAAAAAAAQAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllere\ChestionareController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Controllere.CiclulDeStudiiController">
+    <Position X="10" Y="1.25" Width="2.25" />
+    <AssociationLine Name="_context" Type="AWSServerlessFeedbackDiscipline.ContextBazaDeDate.FeedbackDisciplineContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="2.488" />
+        <Point X="8.875" Y="2.488" />
+        <Point X="8.875" Y="2.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.04" Y="0.327" Height="0.182" Width="0.837" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllere\CiclulDeStudiiController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Controllere.DisciplineController">
+    <Position X="10" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllere\DisciplineController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Controllere.ProgrameStudiuController">
+    <Position X="4.75" Y="0.5" Width="2.25" />
+    <AssociationLine Name="_context" Type="AWSServerlessFeedbackDiscipline.ContextBazaDeDate.FeedbackDisciplineContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.125" Y="1.925" />
+        <Point X="6.125" Y="2.3" />
+        <Point X="6.75" Y="2.3" />
+        <Point X="6.75" Y="2.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.71" Y="0.452" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Controllere\ProgrameStudiuController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Controllere.RaspunsuriChestionarController">
+    <Position X="3.25" Y="4.75" Width="2.5" />
+    <AssociationLine Name="_context" Type="AWSServerlessFeedbackDiscipline.ContextBazaDeDate.FeedbackDisciplineContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.281" Y="4.75" />
+        <Point X="5.281" Y="4.5" />
+        <Point X="6.5" Y="4.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.118" Y="0.118" Height="0.182" Width="0.888" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAABBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllere\RaspunsuriChestionarController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Controllere.TipuriActivitatiController">
+    <Position X="10" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Controllere\TipuriActivitatiController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Controllere.UtilizatoriController">
+    <Position X="7" Y="6.25" Width="1.75" />
+    <AssociationLine Name="_utilizatoriManager" Type="Microsoft.AspNetCore.Identity.UserManager&lt;TUser&gt;">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.648" Y="-0.607" Height="0.182" Width="1.602" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAgAABBIgAAAEAAAAAAAAAAAAAAAAAAAEAAAI=</HashCode>
+      <FileName>Controllere\UtilizatoriController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+      <Field Name="_jwt" />
+      <Field Name="_roluriManager" />
+      <Field Name="_utilizatoriManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Servicii.JWTServicii">
+    <Position X="3.5" Y="7" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAEAAABAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Servicii\JWTServicii.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.RoleManager&lt;TRole&gt;" Collapsed="true">
+    <Position X="10" Y="6.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.UserManager&lt;TUser&gt;" Collapsed="true">
+    <Position X="9.5" Y="7.5" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.AniDeStudiu">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAAAIAAAAA=</HashCode>
+      <FileName>Modele\AniDeStudiu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.AutentificareCerere">
+    <Position X="2.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Modele\AutentificareCerere.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.AutentificareRaspuns">
+    <Position X="0.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAQAAAAAAAAAABAABCAAAAAAAAAAAAEAAAAAQ=</HashCode>
+      <FileName>Modele\AutentificareRaspuns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.CerereTokenReimprospatare">
+    <Position X="0.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\CerereTokenReimprospatare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.ChestionarCompletDTO">
+    <Position X="0.5" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>APQPAAAAARAAAACACAgEAAAAAAAAAAAAAsAIgAAAAAQ=</HashCode>
+      <FileName>Modele\ChestionarCompletDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.Chestionare">
+    <Position X="5.25" Y="9.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAsAIgAAAAAA=</HashCode>
+      <FileName>Modele\Chestionare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.ChestionarPartialDTO">
+    <Position X="3" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AGQLAAAAABAAAACACAAAAAAAAAAAAAAAAsAIgAAAAAQ=</HashCode>
+      <FileName>Modele\ChestionarPartialDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.CiclulDeStudii">
+    <Position X="5.25" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\CiclulDeStudii.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.Discipline">
+    <Position X="7.25" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAgAABEAAAICgQAAAEAAACAAAAA=</HashCode>
+      <FileName>Modele\Discipline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.ProgrameStudiu">
+    <Position X="9.5" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIJAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\ProgrameStudiu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.Raport">
+    <Position X="10.5" Y="14.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\Raport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.RaportComplet">
+    <Position X="10.5" Y="10.5" Width="3.25" />
+    <AssociationLine Name="intrebarea1" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.875" Y="11.368" />
+        <Point X="11.875" Y="12.809" />
+        <Point X="11.875" Y="12.809" />
+        <Point X="11.875" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.892" Y="3.277" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea2" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedFromPoint="true">
+      <Path>
+        <Point X="12.25" Y="11.368" />
+        <Point X="12.25" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.508" Y="3.045" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea3" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.688" Y="11.368" />
+        <Point X="11.688" Y="12.809" />
+        <Point X="11.688" Y="12.809" />
+        <Point X="11.688" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.064" Y="2.822" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea4" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="12.062" Y="11.368" />
+        <Point X="12.062" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.678" Y="2.607" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea5" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="12.438" Y="11.368" />
+        <Point X="12.438" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.305" Y="2.396" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea6" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedFromPoint="true">
+      <Path>
+        <Point X="12.625" Y="11.368" />
+        <Point X="12.625" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.103" Y="2.18" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea7" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="12.812" Y="11.368" />
+        <Point X="12.812" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.916" Y="1.96" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea8" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedFromPoint="true">
+      <Path>
+        <Point X="13" Y="11.368" />
+        <Point X="13" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.739" Y="1.741" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea9" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.5" Y="11.368" />
+        <Point X="11.5" Y="12.809" />
+        <Point X="11.5" Y="12.809" />
+        <Point X="11.5" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.25" Y="1.527" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea10" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedFromPoint="true">
+      <Path>
+        <Point X="11.312" Y="11.368" />
+        <Point X="11.312" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.509" Y="1.321" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea11" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedFromPoint="true">
+      <Path>
+        <Point X="13.312" Y="11.368" />
+        <Point X="13.312" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.5" Y="1.101" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea12" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedToPoint="true">
+      <Path>
+        <Point X="13.125" Y="11.368" />
+        <Point X="13.125" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.676" Y="0.878" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea13" Type="AWSServerlessFeedbackDiscipline.Modele.Raport">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.068" Y="0.671" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea14" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedToPoint="true">
+      <Path>
+        <Point X="10.938" Y="11.368" />
+        <Point X="10.938" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.886" Y="0.461" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea15" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedFromPoint="true">
+      <Path>
+        <Point X="13.5" Y="11.368" />
+        <Point X="13.5" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.286" Y="0.261" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea16" Type="AWSServerlessFeedbackDiscipline.Modele.Raport" FixedToPoint="true">
+      <Path>
+        <Point X="11.125" Y="11.368" />
+        <Point X="11.125" Y="14.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.667" Y="0.051" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAABAIBAAAAAAAAqBAAAAAIA=</HashCode>
+      <FileName>Modele\Raport.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="intrebarea1" />
+      <Property Name="intrebarea2" />
+      <Property Name="intrebarea3" />
+      <Property Name="intrebarea4" />
+      <Property Name="intrebarea5" />
+      <Property Name="intrebarea6" />
+      <Property Name="intrebarea7" />
+      <Property Name="intrebarea8" />
+      <Property Name="intrebarea9" />
+      <Property Name="intrebarea10" />
+      <Property Name="intrebarea11" />
+      <Property Name="intrebarea12" />
+      <Property Name="intrebarea13" />
+      <Property Name="intrebarea14" />
+      <Property Name="intrebarea15" />
+      <Property Name="intrebarea16" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.RaportDTO">
+    <Position X="7.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Modele\RaportDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.RoluriUtilizator">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\RoluriUtilizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.TipuriActivitati">
+    <Position X="2.25" Y="13.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\TipuriActivitati.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.TokenReimprospatare">
+    <Position X="4.25" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAABAAAACAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Modele\TokenReimprospatare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.Utilizator">
+    <Position X="8.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAAAAAAAQAAAQ=</HashCode>
+      <FileName>Modele\Utilizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AWSServerlessFeedbackDiscipline.Modele.NumeUtilizator">
+    <Position X="6.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Modele\Utilizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

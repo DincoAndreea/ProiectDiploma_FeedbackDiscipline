@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AZIf1ICX5gvEtLpjS+fAWex5zo+kruVtgTfRcWGh00c=",
+  "Source": "AWSServerlessFeedbackDiscipline",
+  "BasePath": "_content/AWSServerlessFeedbackDiscipline",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

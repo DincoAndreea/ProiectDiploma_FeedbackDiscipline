@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FeedbackDiscipline.Modele.AniDeStudiu">
+    <Position X="2.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAAAIAAAAA=</HashCode>
+      <FileName>Modele\AniDeStudiu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.Autentificare">
+    <Position X="13.75" Y="7.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAQAAAAAAAAAABAABCAAAAAAAAAAAAEAAAAAQ=</HashCode>
+      <FileName>Modele\Autentificare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.ChestionarCompletDTO">
+    <Position X="4.25" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>APQPAAAAARAAAACACAgEAAAAAAAAAAAAAsAIgAAAAAQ=</HashCode>
+      <FileName>Modele\ChestionarCompletDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.Chestionare">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAsAIgAAAAAA=</HashCode>
+      <FileName>Modele\Chestionare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.ChestionarPartialDTO">
+    <Position X="14.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AGQLAAAAABAAAACACAAAAAAAAAAAAAAAAsAIgAAAAAQ=</HashCode>
+      <FileName>Modele\ChestionarPartialDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.CiclulDeStudii">
+    <Position X="2.25" Y="12.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\CiclulDeStudii.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.Disciplina">
+    <Position X="2.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAgAABEAAAICgQAAAEAAACAAAAA=</HashCode>
+      <FileName>Modele\Discipline.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.Inregistrare">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAAAAAAAQAAAQ=</HashCode>
+      <FileName>Modele\Inregistrare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.Logare">
+    <Position X="12.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Modele\Logare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.ProgrameStudiu">
+    <Position X="12.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIJAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\ProgrameStudiu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.RaportDTO">
+    <Position X="2.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Modele\RaportDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.RaportText">
+    <Position X="5.75" Y="4.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\RaportText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.RaportComplet">
+    <Position X="5.75" Y="0.5" Width="4" />
+    <AssociationLine Name="intrebarea1" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.594" Y="3.338" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea2" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="3.043" Y="3.088" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea3" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.007" Y="2.855" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea4" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.474" Y="2.631" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea5" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="3.56" Y="2.415" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea6" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.318" Y="2.182" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea7" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.481" Y="1.966" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea8" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.206" Y="1.733" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea9" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="3.31" Y="1.501" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea10" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="3.983" Y="1.259" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea11" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.705" Y="1.026" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea12" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.878" Y="0.81" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea13" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.732" Y="0.578" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea14" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.222" Y="0.353" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea15" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="3.767" Y="0.129" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="intrebarea16" Type="FeedbackDiscipline.Modele.RaportText">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.438" Y="-0.104" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAABAIBAAAAAAAAqBAAAAAIA=</HashCode>
+      <FileName>Modele\RaportText.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="intrebarea1" />
+      <Property Name="intrebarea2" />
+      <Property Name="intrebarea3" />
+      <Property Name="intrebarea4" />
+      <Property Name="intrebarea5" />
+      <Property Name="intrebarea6" />
+      <Property Name="intrebarea7" />
+      <Property Name="intrebarea8" />
+      <Property Name="intrebarea9" />
+      <Property Name="intrebarea10" />
+      <Property Name="intrebarea11" />
+      <Property Name="intrebarea12" />
+      <Property Name="intrebarea13" />
+      <Property Name="intrebarea14" />
+      <Property Name="intrebarea15" />
+      <Property Name="intrebarea16" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.RaspunsuriChestionar">
+    <Position X="4.75" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AUAABCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\RaspunsuriChestionar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.TipuriActivitati">
+    <Position X="11.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\TipuriActivitati.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.Token">
+    <Position X="2" Y="14.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modele\Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Modele.Utilizatori">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Modele\Utilizatori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackDiscipline.Pagini.Administrare">
+    <Position X="7.5" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAEAAAAAgAAAAEAIIFAAgAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pagini\Administrare.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="administrareServicii" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FeedbackDiscipline.Pagini.Conectare">
+    <Position X="11.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Pagini\Conectare.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="administrareServicii" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FeedbackDiscipline.Pagini.EvaluareDiscipline">
+    <Position X="6.75" Y="12.25" Width="3.5" />
+    <AssociationLine Name="tipactivitati" Type="FeedbackDiscipline.Modele.TipuriActivitati" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="12.75" />
+        <Point X="10.5" Y="12.75" />
+        <Point X="10.5" Y="12.5" />
+        <Point X="12.312" Y="12.5" />
+        <Point X="12.312" Y="12.046" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.159" Y="0.239" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="evaluareDisciplineServicii" Type="FeedbackDiscipline.ServiciiAPI.IEvaluareDisciplineServicii" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="14.625" />
+        <Point X="10.5" Y="14.625" />
+        <Point X="10.5" Y="15.245" />
+        <Point X="12.125" Y="15.245" />
+        <Point X="12.125" Y="15.007" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.128" Y="0.298" Height="0.182" Width="1.785" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAACggAAggAAgCEBgAAIAAAAAEEAAAQEAACA=</HashCode>
+      <FileName>Pagini\EvaluareDiscipline.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="evaluareDisciplineServicii" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="tipactivitati" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FeedbackDiscipline.Pagini.RaportEvaluari">
+    <Position X="14.25" Y="12.5" Width="2.5" />
+    <AssociationLine Name="evaluareDisciplineServicii" Type="FeedbackDiscipline.ServiciiAPI.IEvaluareDisciplineServicii" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.312" Y="15.464" />
+        <Point X="14.312" Y="15.714" />
+        <Point X="14" Y="15.714" />
+        <Point X="14" Y="13.879" />
+        <Point X="13.5" Y="13.879" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.91" Y="-1.899" Height="0.182" Width="1.589" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="raportEvaluariServicii" Type="FeedbackDiscipline.ServiciiAPI.IRaportEvaluariServicii">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.616" Y="0.09" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="tipactivitati" Type="FeedbackDiscipline.Modele.TipuriActivitati" ManuallyRouted="true">
+      <Path>
+        <Point X="16.531" Y="12.5" />
+        <Point X="16.531" Y="12.082" />
+        <Point X="15.333" Y="12.082" Type="JumpStart" />
+        <Point X="15.167" Y="12.082" Type="JumpEnd" />
+        <Point X="14.165" Y="12.082" />
+        <Point X="14.165" Y="11.856" />
+        <Point X="13" Y="11.856" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACAAAIQAgAAAAAAAAAAAAEBAkCAAACAIEAAAAAAAAAA=</HashCode>
+      <FileName>Pagini\RaportEvaluari.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="evaluareDisciplineServicii" />
+      <Field Name="raportEvaluariServicii" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="tipactivitati" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FeedbackDiscipline.ServiciiAPI.AdministrareServicii">
+    <Position X="4.5" Y="9.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAIgAEAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiciiAPI\AdministrareServicii.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FeedbackDiscipline.ServiciiAPI.RaportEvaluariServicii">
+    <Position X="10.75" Y="9" Width="1.75" />
+    <AssociationLine Name="administrareServicii" Type="FeedbackDiscipline.ServiciiAPI.IAdministrareServicii">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.011" Y="0.1" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiciiAPI\RaportEvaluariServicii.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="administrareServicii" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FeedbackDiscipline.ServiciiAPI.EvaluareDisciplineServicii">
+    <Position X="7.25" Y="9.75" Width="3" />
+    <AssociationLine Name="administrareServicii" Type="FeedbackDiscipline.ServiciiAPI.IAdministrareServicii">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="1.312" Y="1.794" Height="0.182" Width="1.553" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAQEAAgAAAgAAAAAAAAAAAAAAEAAAAQAAAAAA=</HashCode>
+      <FileName>ServiciiAPI\EvaluareDisciplineServicii.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="administrareServicii" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="FeedbackDiscipline.ServiciiAPI.IAdministrareServicii">
+    <Position X="11.25" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAIgAEAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiciiAPI\IAdministrareServicii.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FeedbackDiscipline.ServiciiAPI.IEvaluareDisciplineServicii">
+    <Position X="10.75" Y="12.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAQEAAgAAAgAAAAAAAAAAAAAAEAAAAQAAAAAA=</HashCode>
+      <FileName>ServiciiAPI\IEvaluareDisciplineServicii.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FeedbackDiscipline.ServiciiAPI.IRaportEvaluariServicii">
+    <Position X="14.25" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiciiAPI\IRaportEvaluariServicii.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

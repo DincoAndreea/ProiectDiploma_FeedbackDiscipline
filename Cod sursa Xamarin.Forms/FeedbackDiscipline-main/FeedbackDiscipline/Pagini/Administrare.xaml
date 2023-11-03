@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FeedbackDiscipline.Pagini.Administrare"
+             BackgroundColor="White"
+             NavigationPage.HasBackButton="False">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Deconectare" Clicked="Deconectare" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ScrollView VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+                <StackLayout Padding="5,0,5,0">
+                    <Label x:Name="etichetaInregistrareUtilizator" Text="Înregistrare utilizator" FontSize="Medium" TextColor="Black" Padding="3,6,6,6"></Label>
+                    <Entry x:Name="numeUtilizatorInregistrare" Placeholder="*Nume utilizator" PlaceholderColor="Gray" TextColor="Black"></Entry>
+                    <Entry x:Name="emailUtilizatorInregistrare" Placeholder="*Email utilizator" PlaceholderColor="Gray" TextColor="Black"></Entry>
+                    <Entry x:Name="parolaUtilizatorInregistrare" Placeholder="*Parola utilizator" PlaceholderColor="Gray" TextColor="Black"></Entry>
+                    <Picker x:Name="rolUtilizatorInregistrare" Title="*Rol" TitleColor="Gray" TextColor="Black"></Picker>
+                    <Button x:Name="butonInregistrareUtilizator" Text="Înregistrare" Clicked="inregistrareUtilizator" BackgroundColor="#1976D2" TextColor="Black"></Button>
+                    <Label x:Name="etichetaStergeUtilizatori" Text="Ștergere utilizatori" FontSize="Medium" TextColor="Black" Padding="3,60,6,6"></Label>
+                    <Button x:Name="butonReimprospatare" Text="Reîmprospătare" BackgroundColor="#1976D2" TextColor="Black" Clicked="reimprospatareListaUtilizatori"></Button>
+                    <ScrollView VerticalOptions="FillAndExpand">
+                        <CollectionView x:Name="ListaUtilizatori" SelectionMode="Multiple" HeightRequest="400">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Padding="10"
+                                        RowDefinitions="Auto"
+                                        ColumnDefinitions="Auto">
+                                        <Label Grid.Column="1"
+                                            Text="{Binding nume_utilizator}"
+                                            FontAttributes="Bold"
+                                               TextColor="Black"/>
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup Name="CommonStates">
+                                                <VisualState Name="Normal" />
+                                                <VisualState Name="Selected">
+                                                    <VisualState.Setters>
+                                                        <Setter Property="BackgroundColor" Value="#1976D2"/>
+                                                    </VisualState.Setters>
+                                                </VisualState>
+                                            </VisualStateGroup>
+                                        </VisualStateManager.VisualStateGroups>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </ScrollView>
+                    <Button x:Name="butonStergeUtilizatori" Text="Șterge utilizatori" Clicked="stergeUtilizatori" Margin="0,0,0,5" BackgroundColor="#1976D2" TextColor="Black"></Button>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

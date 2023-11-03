@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FeedbackDiscipline.Pagini.EvaluareDiscipline"
+             BackgroundColor="White"
+             NavigationPage.HasBackButton="False">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Deconectare" Clicked="Deconectare" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ScrollView VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+                <StackLayout Padding="5,0,5,0" x:Name="PaginaChestionar">
+                    <Label Text="Câmpurile cu * sunt obligatorii" FontSize="15" Padding="3,6,6,6" TextColor="Gray"/>
+                    <Picker Title="*Ciclul de studii:" x:Name="CicluriStudiu" TitleColor="Gray" TextColor="Black" SelectedIndexChanged="CicluriStudiuSelectare"></Picker>
+                    <Picker Title="*Anul de studiu:" x:Name="AniStudiu" TitleColor="Gray" TextColor="Black"></Picker>
+                    <Picker Title="*Programul de studiu:" x:Name="ProgrameDeStudiu" TitleColor="Gray" TextColor="Black" SelectedIndexChanged="ProgrameDeStudiuSelectare"></Picker>
+                    <Picker Title="*Disciplina:" x:Name="Disciplina" TitleColor="Gray" TextColor="Black" SelectedIndexChanged="DisciplineSelectare"></Picker>
+                    <Picker Title="*Tipul activității:" x:Name="TipActivitate" TitleColor="Gray" TextColor="Black" SelectedIndexChanged="TipuriActivitatiSelectare"></Picker>
+                    <Label x:Name="etichetaListaActivitati" Text="● *Selectează activitatea/activitățile pe care dorești să le evaluezi:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <ScrollView>
+                        <CollectionView x:Name="ListaActivitati" SelectionMode="Multiple" SelectionChanged="SelectareActivitati" HeightRequest="150">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Padding="10"
+                            RowDefinitions="Auto"
+                            ColumnDefinitions="Auto">
+                                        <Label Grid.Column="1"
+                            Text="{Binding}"
+                            FontAttributes="Bold"
+                            TextColor="Black"/>
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup Name="CommonStates">
+                                                <VisualState Name="Normal" />
+                                                <VisualState Name="Selected">
+                                                    <VisualState.Setters>
+                                                        <Setter Property="BackgroundColor" Value="#1976D2"/>
+                                                    </VisualState.Setters>
+                                                </VisualState>
+                                            </VisualStateGroup>
+                                        </VisualStateManager.VisualStateGroups>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </ScrollView>
+                    <Label x:Name="Intrebare1" Text="● *Am fost prezent(ă) la următoarele activități:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <ScrollView>
+                        <CollectionView x:Name="ListaPrezente" SelectionMode="Multiple" HeightRequest="150">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Padding="10"
+                            RowDefinitions="Auto"
+                            ColumnDefinitions="Auto">
+                                        <Label Grid.Column="1"
+                            Text="{Binding}"
+                            FontAttributes="Bold"
+                            TextColor="Black"/>
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup Name="CommonStates">
+                                                <VisualState Name="Normal" />
+                                                <VisualState Name="Selected">
+                                                    <VisualState.Setters>
+                                                        <Setter Property="BackgroundColor" Value="#1976D2"/>
+                                                    </VisualState.Setters>
+                                                </VisualState>
+                                            </VisualStateGroup>
+                                        </VisualStateManager.VisualStateGroups>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </ScrollView>
+                    <Label x:Name="Intrebare2" Text="● *Materialul didactic se regăsește în format:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="2,0,0,8" x:Name="grilaIntrebare2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox x:Name="casutaBifatIntrebare2Fizic" Color="#1976D2" Grid.Row="0" Grid.Column="0" CheckedChanged="casutaBifatIntrebare2FizicModificare"></CheckBox>
+                        <Label Text="Fizic" Grid.Row="0" Grid.Column="1" FontSize="Medium" TextColor="Black"></Label>
+                        <CheckBox x:Name="casutaBifatIntrebare2Electronic" Color="#1976D2" Grid.Row="1" Grid.Column="0" CheckedChanged="casutaBifatIntrebare2ElectronicModificare"></CheckBox>
+                        <Label Text="Electronic" Grid.Row="1" Grid.Column="1" FontSize="Medium" TextColor="Black"></Label>
+                        <CheckBox x:Name="casutaBifatIntrebare2NuSeAplica" Color="#1976D2" Grid.Row="2" Grid.Column="0" CheckedChanged="casutaBifatIntrebare2NuSeAplicaModificare"></CheckBox>
+                        <Label Text="Nu se aplică" Grid.Row="2" Grid.Column="1" FontSize="Medium" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare3" Text="● *Materialul didactic este gratuit:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="2,0,0,10" x:Name="grilaIntrebare3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <RadioButton x:Name="butonRadioIntrebare3Da" TextColor="Black" Grid.Row="0" Grid.Column="0" Content="Da" GroupName="I3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare3Nu" TextColor="Black" Grid.Row="1" Grid.Column="0" Content="Nu" GroupName="I3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare3NuSeAplica" TextColor="Black" Grid.Row="2" Grid.Column="0" Content="Nu se aplică" GroupName="I3"></RadioButton>
+                    </Grid>
+                    <Label x:Name="Intrebare4" Text="● *Materialul didactic este accesibil(poate fi accesat ușor de pe un dispozitiv mobil/PC sau nu necesită mulți pași pentru a fi accesat):" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20" x:Name="grilaIntrebare4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare41" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I4" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare42" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I4" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare43" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I4" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare44" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I4" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare45" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I4" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare46" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I4" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare5" Text="● *Materialul didactic oferă destule informații despre subiectul prezentat:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare51" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I5" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare52" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I5" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare53" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I5" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare54" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I5" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare55" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I5" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare56" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I5" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare6" Text="● *Materialul didactic este organizat și usor de navigat:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare61" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I6" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare62" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I6" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare63" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I6" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare64" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I6" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare65" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I6" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare66" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I6" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare7" Text="● *Materialul didactic oferă destule explicații:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare71" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I7" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare72" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I7" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare73" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I7" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare74" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I7" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare75" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I7" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare76" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I7" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare8" Text="● *Materialul didactic oferă o sursă de evaluare a performanțe melei:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare81" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I8" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare82" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I8" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare83" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I8" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare84" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I8" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare85" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I8" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare86" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I8" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare9" Text="● *Materialul didactic de la această activitate este în concordanță cu cel de la alte tipuri de activități din cadrul acestei discipline:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20" x:Name="grilaIntrebare9">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare91" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I9" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare92" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I9" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare93" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I9" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare94" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I9" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare95" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I9" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare96" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I9" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare10" Text="● *Gradul de dificultate al acestei activitați a fost:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Foarte scăzut" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare101" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I10" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare102" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I10" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare103" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I10" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare104" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I10" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare105" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I10" Value="5"></RadioButton>
+                        <Label Text="Foarte ridicat" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare106" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I10" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare11" Text="● *Volumul de informații prezentat este adecvat:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare111" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I11" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare112" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I11" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare113" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I11" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare114" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I11" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare115" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I11" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare116" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I11" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare12" Text="● *Experiența dobândită la această activitate mă ajută să mă dezvolt pe plan profesional:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,-17,20" x:Name="grilaIntrebare12">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare121" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I12" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare122" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I12" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare123" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I12" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare124" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I12" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare125" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I12" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare13" Text="● *Materialul didactic nu conține multe greșeli gramaticale, este lizibil și nu conține informații eronate:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20" x:Name="grilaIntrebare13">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Nu sunt de acord" Grid.Row="1" Grid.Column="1" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare131" TextColor="Black" Grid.Row="0" Grid.Column="1" GroupName="I13" Value="1"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare132" TextColor="Black" Grid.Row="0" Grid.Column="2" GroupName="I13" Value="2"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare133" TextColor="Black" Grid.Row="0" Grid.Column="3" GroupName="I13" Value="3"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare134" TextColor="Black" Grid.Row="0" Grid.Column="4" GroupName="I13" Value="4"></RadioButton>
+                        <RadioButton x:Name="butonRadioIntrebare135" TextColor="Black" Grid.Row="0" Grid.Column="5" GroupName="I13" Value="5"></RadioButton>
+                        <Label Text="Sunt de acord" Grid.Row="1" Grid.Column="5" FontSize="Small" TextColor="Black"></Label>
+                        <RadioButton x:Name="butonRadioIntrebare136" TextColor="Black" Grid.Row="0" Grid.Column="6" GroupName="I13" Value="6"></RadioButton>
+                        <Label Text="Nu se aplică" Grid.Row="1" Grid.Column="6" FontSize="Small" TextColor="Black"></Label>
+                    </Grid>
+                    <Label x:Name="Intrebare14" Text="● *Materialul didactic este disponibil în următoarele limbi:" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Grid Padding="10,0,0,20" x:Name="grilaIntrebare14">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <CheckBox x:Name="casutaBifatIntrebare14Romana" Color="#1976D2" Grid.Row="0" Grid.Column="0" Margin="-10,0,0,0" CheckedChanged="casutaBifatIntrebare14RomanaModificare"></CheckBox>
+                        <Label Text="Romana" Grid.Row="0" Grid.Column="1" FontSize="Medium" TextColor="Black" Padding="-180,2,0,0"></Label>
+                        <CheckBox x:Name="casutaBifatIntrebare14Engleza" Color="#1976D2" Grid.Row="1" Grid.Column="0" Margin="-10,0,0,0" CheckedChanged="casutaBifatIntrebare14EnglezaModificare"></CheckBox>
+                        <Label Text="Engleza" Grid.Row="1" Grid.Column="1" FontSize="Medium" TextColor="Black" Padding="-180,6,0,0"></Label>
+                        <CheckBox x:Name="casutaBifatIntrebare14NuSeAplica" Color="#1976D2" Grid.Row="2" Grid.Column="0" Margin="-10,-2,0,0" CheckedChanged="casutaBifatIntrebare14NuSeAplicaModificare"></CheckBox>
+                        <Label Text="Nu se aplică" Grid.Row="2" Grid.Column="1" FontSize="Medium" TextColor="Black" Padding="-180,6,0,0"></Label>
+                        <Entry x:Name="campIntrebare14AlteLimbi" PlaceholderColor="Gray" TextColor="Black" Placeholder="Alte limbi" Grid.Row="3" Grid.Column="0" WidthRequest="200" Margin="-5,-7,0,0" TextChanged="campIntrebare14AlteLimbiModificare"></Entry>
+                    </Grid>
+                    <Label x:Name="etichetaIntrebarea15" Text="● Ce îmbunătățiri ați propune pentru această activitate?" FontSize="20" Padding="6" TextColor="Black"></Label>
+                    <Label x:Name="etichetaIntrebarea16" Text="● Ce aspecte din cadrul acestei activități v-au plăcut?" FontSize="20" Padding="6" TextColor="Black"></Label>
+                </StackLayout>
+            </ScrollView>
+            <Button x:Name="butonTrimite" Text="Trimite" Grid.Row="1" Grid.Column="0" Margin="-2,-6,-2,-2" BackgroundColor="#1976D2" TextColor="Black" Clicked="butonTrimiteChestionar"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

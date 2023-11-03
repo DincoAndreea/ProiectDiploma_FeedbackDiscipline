@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "7PVuQMBAw11xl2X3YkZdT/kP3U25/2zfwyMqG29FCOgEifh9LEDOoGGvz63hM1mUwDKATppnY7OQEVH8aiYgRQ==",
+  "success": true,
+  "projectFilePath": "D:\\01_Anul IV\\LicentaProiect\\FeedbackDiscipline\\FeedbackDiscipline\\FeedbackDiscipline.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dinco\\.nuget\\packages\\microsoft.net.build.containers\\0.3.2\\microsoft.net.build.containers.0.3.2.nupkg.sha512",
+    "C:\\Users\\dinco\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dinco\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\dinco\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\dinco\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\dinco\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

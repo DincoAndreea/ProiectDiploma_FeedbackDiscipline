@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FeedbackDiscipline.Pagini.RaportEvaluari"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             BackgroundColor="White"
+             NavigationPage.HasBackButton="False">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Deconectare" Clicked="Deconectare" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ScrollView VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+                <StackLayout Padding="5,0,5,0">
+                    <Label Text="Raport discipline" FontSize="20" TextColor="Black" Padding="3,6,6,6"></Label>
+                    <Picker x:Name="raportCicluStudii" Title="Ciclul de studii" TitleColor="Gray" TextColor="Black" SelectedIndexChanged="raportCicluStudiiSelectare"></Picker>
+                    <Picker x:Name="raportProgramStudiu" Title="Programul de studiu" TitleColor="Gray" TextColor="Black" SelectedIndexChanged="raportProgramStudiuSelectare"></Picker>
+                    <Picker x:Name="raportDisciplina" Title="Disciplina" TitleColor="Gray" TextColor="Black" SelectedIndexChanged="raportDisciplinaSelectare"></Picker>
+                    <Picker x:Name="raportTipActivitate" Title="Tipul activității" TitleColor="Gray" TextColor="Black" SelectedIndexChanged="raportTipActivitateSelectare"></Picker>
+                    <Label x:Name="etichetaIntrebarea15" IsVisible="false" Text="● Ce îmbunătățiri ați propune pentru această activitate?" TextColor="Black" FontSize="20"></Label>
+                    <ScrollView HeightRequest="350">
+                        <Label x:Name="raportEtichetaIntrebarea15" Padding="0,20,0,20" FontSize="20" TextColor="Black"></Label>
+                    </ScrollView>
+                    <Label x:Name="etichetaIntrebarea16" IsVisible="false" Text="● Ce aspecte din cadrul acestei activități v-au plăcut?" TextColor="Black" FontSize="20"></Label>
+                    <ScrollView HeightRequest="350">
+                        <Label x:Name="raportEtichetaIntrebarea16" Padding="0,10,0,10" FontSize="20" TextColor="Black"></Label>
+                    </ScrollView>
+                    <Label x:Name="raportEtichetaLegenda" Padding="3,6,6,6" FontSize="20" TextColor="Black"></Label>
+                    <Label x:Name="raportIntrebarea4" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Materialul didactic este accesibil(poate fi accesat ușor de pe un dispozitiv mobil/PC sau nu necesită mulți pași pentru a fi accesat):"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea4" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea5" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Materialul didactic oferă destule informații despre subiectul prezentat:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea5" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea6" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Materialul didactic este organizat și usor de navigat:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea6" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea7" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Materialul didactic oferă destule explicații:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea7" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea8" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Materialul didactic oferă o sursă de evaluare a performanțe melei:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea8" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea9" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Materialul didactic de la această activitate este în concordanță cu cel de la alte tipuri de activități din cadrul acestei discipline:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea9" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea10" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Gradul de dificultate al acestei activități a fost:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea10" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea11" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Volumul de informații prezentat este adecvat:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea11" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea12" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Experiența dobândită la această activitate mă ajută să mă dezvolt pe plan profesional:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea12" HeightRequest="300"></microcharts:ChartView>
+                    <Label x:Name="raportIntrebarea13" IsVisible="false" Padding="3,20,6,20" FontSize="20" TextColor="Black" Text="● Materialul didactic nu conține multe greșeli gramaticale, este lizibil și nu conține informații eronate:"></Label>
+                    <microcharts:ChartView x:Name="diagramaIntrebarea13" HeightRequest="300"></microcharts:ChartView>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

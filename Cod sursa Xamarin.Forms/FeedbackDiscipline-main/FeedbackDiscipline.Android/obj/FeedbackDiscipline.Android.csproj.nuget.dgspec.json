@@ -1,0 +1,161 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline.Android\\FeedbackDiscipline.Android.csproj": {}
+  },
+  "projects": {
+    "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline.Android\\FeedbackDiscipline.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline.Android\\FeedbackDiscipline.Android.csproj",
+        "projectName": "FeedbackDiscipline.Android",
+        "projectPath": "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline.Android\\FeedbackDiscipline.Android.csproj",
+        "packagesPath": "C:\\Users\\dinco\\.nuget\\packages\\",
+        "outputPath": "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dinco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid13.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid13.0": {
+            "projectReferences": {
+              "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline\\FeedbackDiscipline.csproj": {
+                "projectPath": "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline\\FeedbackDiscipline.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid13.0": {
+          "dependencies": {
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
+            "Okta.Xamarin.Android": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.5, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2578, )"
+            }
+          }
+        }
+      }
+    },
+    "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline\\FeedbackDiscipline.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline\\FeedbackDiscipline.csproj",
+        "projectName": "FeedbackDiscipline",
+        "projectPath": "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline\\FeedbackDiscipline.csproj",
+        "packagesPath": "C:\\Users\\dinco\\.nuget\\packages\\",
+        "outputPath": "D:\\01_Anul IV\\Proiect de diploma\\Dinco Andreea-Elena\\Cod sursa Xamarin.Forms\\FeedbackDiscipline-main\\FeedbackDiscipline\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dinco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
+            "Microsoft.NET.Build.Containers": {
+              "target": "Package",
+              "version": "[7.0.302, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.5, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2578, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
