@@ -1,8 +1,0 @@
-D:\01_Anul IV\LicentaProiect\FeedbackDiscipline\FeedbackDiscipline\obj\Release\netstandard2.0\linux-x64\PubTmp\Out\FeedbackDiscipline.dll
-D:\01_Anul IV\LicentaProiect\FeedbackDiscipline\FeedbackDiscipline\obj\Release\netstandard2.0\linux-x64\PubTmp\Out\FeedbackDiscipline.deps.json
-D:\01_Anul IV\LicentaProiect\FeedbackDiscipline\FeedbackDiscipline\obj\Release\netstandard2.0\linux-x64\PubTmp\Out\FeedbackDiscipline.pdb
-D:\01_Anul IV\LicentaProiect\FeedbackDiscipline\FeedbackDiscipline\obj\Release\netstandard2.0\linux-x64\PubTmp\Out\System.Numerics.Vectors.dll
-D:\01_Anul IV\LicentaProiect\FeedbackDiscipline\FeedbackDiscipline\obj\Release\netstandard2.0\linux-x64\PubTmp\Out\Xamarin.Essentials.dll
-D:\01_Anul IV\LicentaProiect\FeedbackDiscipline\FeedbackDiscipline\obj\Release\netstandard2.0\linux-x64\PubTmp\Out\Xamarin.Forms.Core.dll
-D:\01_Anul IV\LicentaProiect\FeedbackDiscipline\FeedbackDiscipline\obj\Release\netstandard2.0\linux-x64\PubTmp\Out\Xamarin.Forms.Platform.dll
-D:\01_Anul IV\LicentaProiect\FeedbackDiscipline\FeedbackDiscipline\obj\Release\netstandard2.0\linux-x64\PubTmp\Out\Xamarin.Forms.Xaml.dll
